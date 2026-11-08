@@ -1,0 +1,33 @@
+ref,value,package,candidate_part,lcsc,status,notes
+U5,BQ25887,QFN-24 4x4,TI BQ25887RGER or RGET,C2761614 (RGER),datasheet read,pick whichever JLCPCB stocks
+U3,TPS62162 3.3V fixed,WSON-8 2x2,TI TPS62162DSGR,TBD,family datasheet read,do not use adjustable TPS62160
+U1,ESP32-S3-WROOM-1U-N8R8,module,Espressif ESP32-S3-WROOM-1U-N8R8,TBD,candidate,confirm 1U vs 1
+Q20,P-FET,SOT-23,AO3401A,TBD,candidate,check Vgs max about 12 V
+Q21 Q30,N-FET,SOT-23,2N7002,TBD,candidate,
+D20 D21 D30 D31,Schottky,SOD-323,BAT54WS,TBD,candidate,low leakage needed
+L40,1uH,3x3 mm,DFE252012F-1R0 (TI used) or VLS3012CX-class,TBD,verify Isat 1.5 A+,
+L60,2.2uH,3x3 mm,VLS3012CX-class,TBD,verify Isat 1.4 A+,
+U4,JST XH 3-pin,TH 2.54,B3B-XH-A or S3B-XH-A,TBD,candidate,check height
+C1,100nF,0402,X7R 16V,TBD,value set,
+C2,1uF,0603,X7R 10V,TBD,value set,
+C3 C61,22uF,0805,X5R 10V,TBD,value set,
+C4 C41 C60,10uF,0805,X5R 25V (C4 16V ok),TBD,value set,
+C20,150nF,0805,X7R 16V+,TBD,value set,
+C21,100nF,0603,X7R,TBD,value set,
+C40,1uF,0805,X7R 25V,TBD,value set,
+C42,47nF,0805,X7R,TBD,value set,
+C43,4.7uF,0805,X5R 10V,TBD,value set,
+C44 C45,22uF,0805,X5R 16V+,TBD,value set,
+R1 R45 R50 R51 R52 R53,10k,0603,1%,TBD,value set,
+R20 R23 R24 R25 R26 R28 R31,100k,0603,,TBD,value set,
+R21 R22,47k,0603,,TBD,value set,
+R27,300k,0603,,TBD,value set,
+R30,1k,0603,,TBD,value set,
+R41,33,2512 1W,,TBD,change footprint,balance resistor
+R42,300,0603,,TBD,value set,
+R44,30.1k,0603,1%,TBD,value set,
+R2,5.23k,0603,1%,TBD,value set,
+R46,1.87k,0603,1%,TBD,value set,
+SW20,tactile,6.4x6.3 SMD,TS6635PA,TBD,candidate,
+SW1,tactile,SMD,,TBD,prototype only,
+H1 H2 U2,headers,TH,,TBD,candidate,

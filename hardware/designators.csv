@@ -1,0 +1,55 @@
+ref,value,footprint,block,role
+C1,100nF,C0402,ESP32,3V3 decoupling
+C2,1uF,C0603,ESP32,EN delay
+C3,22uF,C0805,ESP32,3V3 bulk
+C4,10uF,C0805,charger,BAT capacitor
+C20,150nF,C0805,latch,soft-start gate to VSW
+C21,100nF,C0603,sense,VBAT_SENSE filter
+C40,1uF,C0805,charger,VBUS
+C41,10uF,C0805,charger,PMID
+C42,47nF,C0805,charger,BTST
+C43,4.7uF,C0805,charger,REGN
+C44,22uF,C0805,charger,SNS
+C45,22uF,C0805,charger,SNS
+C60,10uF,C0805,buck,input
+C61,22uF,C0805,buck,output
+R1,10k,R0603,ESP32,EN pull-up
+R2,5.23k,R0603,charger,TS to REGN
+R20,100k,R0603,latch,VBAT to gate
+R21,47k,R0603,latch,gate to D20
+R22,47k,R0603,latch,gate to Q21 drain
+R23,100k,R0603,latch,HOLD pulldown
+R24,100k,R0603,latch,BTN pull-up
+R25,100k,R0603,latch,VSW bleeder
+R26,100k,R0603,buck,3.3v bleeder
+R27,300k,R0603,sense,VSW to VBAT_SENSE
+R28,100k,R0603,sense,VBAT_SENSE to GND
+R30,1k,R0603,LED,LED series resistor
+R31,100k,R0603,LED,Q30 gate pulldown
+R41,33,R0603,charger,CBSET balance (change to 1 W 2512)
+R42,300,R0603,charger,MID series
+R44,30.1k,R0603,charger,TS to GND
+R45,10k,R0603,charger,TS fixed (replaces NTC)
+R46,1.87k,R0603,charger,ILIM
+R50,10k,R0603,charger,INT pull-up
+R51,10k,R0603,charger,PG pull-up
+R52,10k,R0603,charger,SDA pull-up
+R53,10k,R0603,charger,SCL pull-up
+D20,BAT54WS (set value),SOD-323,latch,button path
+D21,BAT54WS (set value),SOD-323,latch,button sense
+D30,BAT54WS (set value),SOD-323,LED,REGN supply to LED
+D31,BAT54WS (set value),SOD-323,LED,3.3v supply to LED
+Q20,AO3401A (set value),SOT-23,latch,main P-FET
+Q21,2N7002 (set value),SOT-23-3,latch,hold N-FET
+Q30,2N7002 (set value),SOT-23-3,LED,LED sink N-FET
+L40,1uH,VLS3012CX,charger,boost inductor (verify Isat)
+L60,2.2uH,VLS3012CX,buck,buck inductor (verify Isat)
+U1,ESP32-S3-WROOM-1U-N8R8 (value reads 2.4GHz),WROOM-1U,ESP32,MCU
+U3,TPS62162DSGR (set value),WSON-8 2x2,buck,3.3V buck
+U4,JST XH 3-pin,CONN-TH XH2.54 3P,battery,VBAT/MID/GND
+U5,BQ25887RGER or RGET (set value),QFN-24 4x4,charger,2S charger
+U2,4-pin header 2.54,HDR-TH 4P,ESP32,serial flashing
+H1,2-pin header 2.00,HDR-TH 2P P2.00,LED,external LED
+H2,2-pin header 2.54,HDR-TH 2P P2.54,ESP32,IO0 boot pad
+SW1,tactile (set value),SW-SMD 4P,ESP32,reset (prototype only)
+SW20,TS6635PA tactile,SW-SMD 4P,latch,power and emergency button

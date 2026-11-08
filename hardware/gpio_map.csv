@@ -1,0 +1,22 @@
+net,gpio,module_pin,direction,function,notes
+HOLD,IO4,4,out,Latch hold to Q21,100k pulldown R23
+BTN,IO5,5,in,Button sense,100k pull-up R24 to 3.3v
+LED,IO6,6,out,Status LED driver (Q30 gate),100k pulldown R31
+MODEM_PWR,IO7,7,out,Modem power switch,planned Q80/Q81
+MODEM_KEY,IO15,8,out,Modem power key,polarity unverified
+MODEM_SLEEP,IO16,9,out,Modem sleep/DTR,
+UART_TX,IO17,10,out,UART to modem RXD,check modem UART voltage
+UART_RX,IO18,11,in,UART from modem TXD,
+USB_DM,IO19,13,io,USB D-,optional native USB
+USB_DP,IO20,14,io,USB D+,optional native USB
+VBAT_SENSE,IO2,38,in,Battery voltage divider,300k/100k from VSW
+SDA,IO9,17,io,Charger I2C,10k pull-up R52
+SCL,IO10,18,out,Charger I2C,10k pull-up R53
+CHG_INT,IO11,19,in,Charger interrupt,10k pull-up R50
+I2S_BCLK,IO12,20,out,Mic clock,
+I2S_WS,IO13,21,out,Mic word select,
+I2S_SD,IO14,22,in,Mic data,
+CHG_PG,IO21,23,in,Charger power good,10k pull-up R51
+IO0,IO0,27,in,Boot mode pad,H2 short to GND to flash
+TXD0,IO43,37,out,Serial flashing TX,U2 pin 1
+RXD0,IO44,36,in,Serial flashing RX,U2 pin 2
